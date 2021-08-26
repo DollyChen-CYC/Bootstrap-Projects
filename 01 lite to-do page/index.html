@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>To-do list</title>
+</head>
+
+<body>
+  <!-- SE2-2_A4 Upgrade TodoList -->
+
+  <div class="m-5">
+    <header class="mb-3">
+      <h2>My Todo</h2>
+      <div class="form-inline">
+        <input type="text" placeholder="add item" id="new-todo" class="form-control mr-2">
+        <button id="add-btn" class="btn btn-info">Add</button>
+      </div>
+      <p class="text-danger d-none" id="empty-warning">Empty Item!</p>
+    </header>
+    <div class="list-panel">
+      <h4>Todo</h4>
+      <ul id="my-todo" class="list-unstyled">
+        <!-- display to-do tasks here -->
+      </ul>
+      <h4>Done</h4>
+      <ul id="done-list" class="list-unstyled">
+        <!-- display done tasks here -->
+      </ul>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
