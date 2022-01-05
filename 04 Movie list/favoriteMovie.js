@@ -41,7 +41,7 @@ function renderMovieList(data) {
       </div>
     `
   })
-  moviePanel.innerHTML = rawHTML
+  moviePanel.innerHTML = rawHTML ? rawHTML : `<h5>You haven't followed any favorite movies.</h5>`
 }
 
 function showMovieDetails(id) {
